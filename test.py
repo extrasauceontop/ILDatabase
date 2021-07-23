@@ -43,7 +43,7 @@ while True:
         for component in item_data["components"]:
             folder_name = component["name"] + "--"
         
-        folder_name = (folder_name + item[2]).replace(" ", "--").replace(",", "---").replace(".", "----").replace(":", ";").replace("/", "-divide-")
+        folder_name = (folder_name + item[2]).replace(" ", "_").replace(",", "__").replace(".", "___").replace(":", ";").replace("/", "-divide-")
 
         # In the event the file already exists, add a number to the filename
         y = 0
