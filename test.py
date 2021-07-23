@@ -10,7 +10,7 @@ search_year = 1900
 while True:
     print("")
     print("")
-    print(search_year)
+    print("Search year: " + str(search_year))
     breaker = 0
     while True:
         try:
@@ -23,7 +23,7 @@ while True:
                 raise Exception
             continue
         
-    print(len(response["res"]))
+    print("Number of records this year: " + str(len(response["res"])))
     for item in response["res"]:
         
         # Creating the folder
